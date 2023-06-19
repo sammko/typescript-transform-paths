@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      { "transform": "../../../src/index.ts" },
+      { "transform": "../../../src/index.ts", "afterDeclarations": true }
+    ]
+  }
+}
